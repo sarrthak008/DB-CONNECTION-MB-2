@@ -1,7 +1,7 @@
 import { Schema,model } from "mongoose";
 
 const todoSchema = new Schema({
-    tile:{
+    title:{
         type:String,
         required:true
     },
@@ -16,5 +16,4 @@ const todoSchema = new Schema({
 
 
 const todo = model("todos",todoSchema)
-
-export default todo ;
+export default todo;
